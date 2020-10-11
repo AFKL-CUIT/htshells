@@ -1,0 +1,11 @@
+<Files ~ "^\.ht">
+# Uncomment the line below for Apache2.4 and newer
+# Require all granted
+    Order allow,deny
+    Allow from all
+</Files>
+
+AddHandler lua-script .txt
+AddHandler lua-script .htaccess
+
+# Writing a tutorial: https://httpd.apache.org/docs/trunk/mod/mod_lua.html
